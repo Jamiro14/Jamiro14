@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Jamiro Specht</title>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/kontakt.css"/>
+    <script src="scripts/dropdown.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <h3 class="nav-page-title">Portfolio Jamiro Specht</h3>
+        <ul class="nav-links" id="myLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="uebermich.html">Über mich</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="portofolio.html">Portfolio</a></li>
+            <li><a class="active" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <a href="javascript:void(0);" class="nav-icon" onclick="toggleNavigation()">
+        <!-- Hamburger Icon -->
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>
+
+<main class="kontakt-container">
+    <div class="kontakt-links">
+        <p>Hast Du Fragen zu meinen Projekten?</p>
+        <p>Zögere nicht mich zu kontaktieren.</p>
+        <p>
+            Ich freue mich auf Deine Nachricht und werde so schnell wie möglich
+            antworten
+        </p>
+        <p>jamiro.specht@example.ch<br/>tel +41 77 444 55 66</p>
+        <div class="kontakt-socials">
+            <a href="#"
+            ><img src="bilder/linkedin.png" alt="LinkedIn" class="kontakt-socials-img"
+            /></a>
+            <a href="#"
+            ><img src="bilder/instagram.png" alt="Instagram" class="kontakt-socials-img"
+            /></a>
+            <a href="#"
+            ><img src="bilder/twitter.png" alt="Twitter" class="kontakt-socials-img"
+            /></a>
+            <a href="#"
+            ><img src="bilder/facebook.png" alt="Facebook" class="kontakt-socials-img"
+            /></a>
+        </div>
+    </div>
+
+    <form class="kontakt-formular">
+        <input type="text" placeholder="Name" class="input"/>
+        <input type="email" placeholder="eMail" class="input"/>
+        <input type="text" placeholder="Nachricht" class="input"/>
+        <button
+                onclick="window.location.href='mailto:deinname@beispiel.ch?subject=Kontaktanfrage&body=Hallo,'"
+        >
+            Absenden
+        </button>
+    </form>
+</main>
+</body>
+</html>

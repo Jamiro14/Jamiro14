@@ -1,0 +1,121 @@
+.uebermich-container {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+}
+
+.uebermich-div-Links {
+    height: 15vw;
+    width: 60vh;
+}
+
+.uebermich-biografie-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.uebermich-biografie-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-left: 2px solid var(--color-gray-background);
+    border-right: 2px solid var(--color-gray-background);
+}
+
+.uebermich-biografie-links h2 {
+    background-color: var(--color-gray-background);
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.uebermich-biografie-eintrag {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.uebermich-jahr {
+    background: var(--color-darker-gray);
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 10px 0 0 10px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.uebermich-text {
+    background: var(--color-light-turquoise-background);
+    padding: 6px 12px;
+    border-radius: 0 10px 10px 0;
+    width: 150px;
+}
+
+.uebermich-biografie-beschreibung {
+    background: var(--color-light-turquoise-background);
+    padding: 20px 25px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 300px;
+    line-height: 1.5;
+    box-shadow: inset 0 0 0 5px var(--color-darker-turquoise-background);
+}
+
+.uebermich-biografie-eintraege-und-text {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.uebermich-biografie-eintraege {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.uebermich-biografie-beschreibung {
+    background: var(--color-light-turquoise-background);
+    padding: 20px;
+    border-radius: 40px;
+    text-align: left;
+    max-width: 300px;
+    line-height: 1.5;
+    box-shadow: inset 0 0 0 4px var(--color-turquoise-background);
+}
+
+.uebermich-biografie-rechts {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.uebermich-biografie-rechts img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+@media screen and (max-width: 950px) {
+    .uebermich-container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .uebermich-biografie-eintraege-und-text {
+        flex-direction: column;
+    }
+    .uebermich-biografie-beschreibung {
+        max-width: 100%;
+    }
+}

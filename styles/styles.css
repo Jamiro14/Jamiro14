@@ -1,0 +1,116 @@
+/*Colors mit css Variablen definiert, damit überall identisch*/
+:root {
+    --color-dark-blue-background: #4891b1;
+    --color-darker-blue-background: #3f7f9b;
+    --color-lighter-blue-background: #5ec0e9;
+
+    --color-turquoise-background: #a2f2f4;
+    --color-darker-turquoise-background: #bdf0f1;
+    --color-light-turquoise-background: #d3fdfd;
+    --color-lighter-turquoise-background: #e4fefe;
+
+    --color-darker-gray: #555;
+    --color-dark-gray-background: #aaa;
+    --color-gray-background: #d9d9d9;
+
+
+    --color-white: #ffffff;
+    --color-black: #000;
+}
+
+/* global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-white);
+}
+
+/* NAVIGATION */
+nav {
+    background-color: var(--color-dark-blue-background);
+    height: 60px;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-page-title {
+    font-weight: bold;
+    background-color: var(--color-darker-blue-background);
+    color: white;
+    padding: 19px 25px;
+    border-radius: 5px;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+/* NAVIGATIONSLINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: var(--color-darker-blue-background);
+    color: var(--color-white);
+    border-radius: 3px;
+    display: block;
+    width: 75px;
+    text-align: center;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background-color: var(--color-lighter-blue-background);
+    color: var(--color-black);
+}
+
+.nav-icon {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 780px) {
+    .nav-links {
+        visibility: hidden;
+        flex-direction: column;
+        top: 62px;
+        right: 5px;
+        position: fixed;
+    }
+
+    .nav-icon {
+        visibility: visible;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: larger;
+    }
+    .nav-links a{
+        width: 120px;
+    }
+
+    /*Diese Klasse wird per js bei click auf Burger  hinzugefügt*/
+    .nav-responsive {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav-container{
+       width: 100%;
+    }
+}
+
+

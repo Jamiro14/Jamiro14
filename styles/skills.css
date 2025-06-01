@@ -1,0 +1,96 @@
+.skills-container {
+    display: flex;
+    gap: 40px;
+}
+
+.skills-bereich {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+}
+
+.skills-box {
+    background-color: var(--color-turquoise-background);
+    padding: 0 20px 20px 20px;
+    border-radius: 25px;
+    width: 40vw;
+}
+
+.skills-box h2 {
+    background-color: var(--color-gray-background);
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 0;
+}
+
+.skill-liste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.skill-liste li {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.skill-label {
+    font-size: large;
+    background-color: var(--color-dark-gray-background);
+    color: var(--color-black);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    min-width: 80px;
+    text-align: left;
+}
+
+.skill-balken {
+    font-size: larger;
+    background-color: var(--color-light-turquoise-background);
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    color: black;
+    font-weight: bold;
+}
+
+.skill-balken-90 {
+    width: 200px;
+}
+.skill-balken-80 {
+    width: 180px;
+}
+.skill-balken-70 {
+    width: 160px;
+}
+.skill-balken-60 {
+    width: 140px;
+}
+.skill-balken-50 {
+    width: 120px;
+}
+.skill-balken-40 {
+    width: 100px;
+}
+.skill-balken-30 {
+    width: 80px;
+}
+.skill-balken-20 {
+    width: 60px;
+}
+.skill-balken-10 {
+    width: 40px;
+}
+
+@media screen and (max-width: 780px) {
+    .skills-container{
+        flex-direction: column;
+    }
+    .skills-box{
+        width: 100%;
+    }
+}

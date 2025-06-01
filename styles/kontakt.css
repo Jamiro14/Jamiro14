@@ -1,0 +1,71 @@
+
+.kontakt-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    background-color: var(--color-turquoise-background);
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.kontakt-links {
+    background-color: var(--color-light-turquoise-background);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.kontakt-socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.kontakt-socials-img {
+    width: 30px;
+    height: 30px;
+}
+
+.kontakt-formular {
+    background-color: var(--color-turquoise-background);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.kontakt-formular button {
+    align-self: flex-start;
+    padding: 8px 16px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 780px) {
+    .kontakt-container{
+        flex-direction: column;
+        padding: 5px;
+        margin: 10px;
+    }
+    .kontakt-links{
+        width: auto;
+    }
+    .kontakt-formular{
+        padding: 0px;
+    }
+}
+
+

@@ -1,0 +1,46 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.home-content-box {
+    display: flex;
+    border: 20px solid var(--color-turquoise-background);
+    background-color: var(--color-turquoise-background);
+    gap: 20px;
+    height: 70%;
+    width: 80%;
+    border-radius: 20px;
+    background-image: url("../bilder/background.png");
+    justify-content: flex-end;
+    padding: 0px;
+    background-size: 60%;
+}
+
+.home-content-box img {
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.home-text-box {
+    background-color: var(--color-light-turquoise-background);
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 780px) {
+    .home-text-box {
+      width: 100%;
+    }
+
+    .home-content-box {
+        height: calc(100% - 60px);
+    }
+}
+
