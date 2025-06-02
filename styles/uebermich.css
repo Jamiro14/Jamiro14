@@ -119,33 +119,3 @@
         max-width: 100%;
     }
 }
-.zoom-wrapper {
-  position: relative;
-  display: inline-block;
-  cursor: zoom-in;
-}
-
-.zoom-toggle {
-  display: none;
-}
-
-.zoom-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.zoom-overlay img {
-  max-width: 90%;
-  max-height: 90%;
-  box-shadow: 0 0 20px black;
-  border-radius: 10px;
-}
-
-.zoom-toggle:checked + img + .zoom-overlay {
-  display: flex;
-}

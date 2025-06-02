@@ -12,3 +12,7 @@
 **Ergänzungen zum Mockup**
 - Responsive Navigation: Burger Icon von Font Awesome, zZusätzliche Library bzw. Font wird importiert
 - Responsive Navigation: wechsel zu Burger Button mitts js
+
+**Optimierung für schnalles LAden**
+- Bilder sind auf der Seite mit kleiner Grösse eingebunden. Sie können angeklickt werden und werden erst dann vollständig geladen
+- Das Video wurde mit  dem attribut preload="none" integriert (https://imagekit.io/blog/lazy-loading-html-videos/)

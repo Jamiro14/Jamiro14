@@ -14,9 +14,10 @@
     width: 80%;
     border-radius: 20px;
     background-image: url("../bilder/background.png");
+     background-repeat: no-repeat;
     justify-content: flex-end;
     padding: 0px;
-    background-size: 60%;
+    background-size: contain;
 }
 
 .home-content-box img {
