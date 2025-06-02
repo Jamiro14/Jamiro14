@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Jamiro Specht</title>
-    <link rel="stylesheet" href="styles/styles.css"/>
-    <link rel="stylesheet" href="styles/portofolio.css"/>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/portofolio.css" />
     <script src="scripts/dropdown.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-<nav>
-    <div class="nav-container">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
         <h3 class="nav-page-title">Portfolio Jamiro Specht</h3>
         <ul class="nav-links" id="myLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="uebermich.html">Über mich</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a class="active" href="portofolio.html">Portfolio</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="uebermich.html">Über mich</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a class="active" href="portofolio.html">Portfolio</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-    </div>
-    <a href="javascript:void(0);" class="nav-icon" onclick="toggleNavigation()">
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="nav-icon"
+        onclick="toggleNavigation()"
+      >
         <!-- Hamburger Icon -->
         <i class="fa fa-bars"></i>
-    </a>
-</nav>
+      </a>
+    </nav>
 
-<main class="portfolio-container">
-    <div class="projekt-bereich">
+    <main class="portfolio-container">
+      <div class="projekt-bereich">
         <h2 class="bereich-titel">Projekte</h2>
 
         <div class="projekt-box">
-            <div class="projekt-titel">Arduino: Abstimmungsprojekt</div>
-            <p class="projekt-text">
-                Wir haben ein Programm entwickelt, das die Abstimmung des
-                Schwierigkeitsgrads neuer Aufgaben vereinfacht – und das auf
-                spielerische Weise.
-            </p>
-            <div class="video-icon">Video</div>
+          <div class="projekt-titel">Arduino: Abstimmungsprojekt</div>
+          <p class="projekt-text">
+            Wir haben ein Programm entwickelt, das die Abstimmung des
+            Schwierigkeitsgrads neuer Aufgaben vereinfacht – und das auf
+            spielerische Weise.
+          </p>
+          <label class="zoom-wrapper">
+            <input type="checkbox" class="zoom-toggle" />
+            <img
+              src="bilder/Abstimmungs-Projeckt1.jpg"
+              alt="Arduino"
+              class="Arduino-Projeckt"
+            />
+            <img
+              src="bilder/Abstimmungs-Projeckt2.jpg"
+              alt="Arduino"
+              class="Arduino-Projeckt"
+            />
+            <div class="zoom-overlay">
+              <img src="bilder/Abstimmungs-Projeckt1.jpg" alt="Arduino Gross" />
+              <img src="bilder/Abstimmungs-Projeckt2.jpg" alt="Arduino Gross" />
+            </div>
+          </label>
         </div>
 
         <div class="projekt-box">
-            <div class="projekt-titel">Java: eigenes Projekt</div>
-            <p class="projekt-text">
-                Ich habe zudem ein Java-Spiel namens Blinko entwickelt, bei dem man
-                mit Spielgeld spielt und sein Vermögen stetig vermehren oder
-                verlieren kann.
-            </p>
-            <div class="video-icon">Video</div>
+          <div class="projekt-titel">Java: eigenes Projekt</div>
+          <p class="projekt-text">
+            Ich habe zudem ein Java-Spiel namens Blinko entwickelt, bei dem man
+            mit Spielgeld spielt und sein Vermögen stetig vermehren oder
+            verlieren kann.
+          </p>
+          <video class="projekt-video" controls>
+            <source src="bilder/Abstimmungsprojeckt.mp4" type="video/mp4" />
+          </video>
         </div>
-    </div>
+      </div>
 
-    <div class="arbeitsproben-bereich">
+      <div class="arbeitsproben-bereich">
         <h2 class="bereich-titel">Arbeitsproben</h2>
         <div class="projekt-links-box">
-            <div class="projekt-links-titel">Projekt links</div>
-            <ul class="projekt-links">
-                <li>github Link1</li>
-                <li>github Link2</li>
-            </ul>
+          <div class="projekt-links-titel">Projekt links</div>
+          <ul class="projekt-links">
+            <li>github Link1</li>
+            <li>github Link2</li>
+          </ul>
         </div>
-        <div class="video-icon gross">Video</div>
-    </div>
-</main>
-</body>
+      </div>
+    </main>
+  </body>
 </html>

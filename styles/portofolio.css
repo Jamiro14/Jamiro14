@@ -57,10 +57,6 @@
     width: fit-content;
 }
 
-.video-icon.gross {
-    margin: 30px auto;
-}
-
 .projekt-links-box {
     background-color: var(--color-lighter-turquoise-background);
     padding: 10px;
@@ -85,6 +81,16 @@
     padding: 4px 0;
 }
 
+.projekt-video {
+    width: 200px;
+    height: 400px;
+}
+
+.Arduino-Projeckt {
+    width: 200px;
+    height: 400px;
+}
+
 @media screen and (max-width: 780px) {
     .portfolio-container {
         flex-direction: column;
@@ -94,4 +100,42 @@
         width: calc(100% - 40px);
         max-width: none;
     }
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.zoom-overlay img {
+  max-width: 45vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+}
+
+.zoom-wrapper {
+  display: inline-block;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.zoom-toggle {
+  display: none;
+}
+
+.zoom-toggle:checked + img + img + .zoom-overlay {
+  display: flex;
 }
