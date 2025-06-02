@@ -67,7 +67,18 @@
         </div>
       </section>
       <div class="uebermich-biografie-rechts">
-        <img src="bilder/Me.png" alt="Profilbild" />
+        <label class="zoom-wrapper">
+          <input type="checkbox" class="zoom-toggle" />
+          <img
+            src="bilder/Me.png"
+            alt="Profilbild"
+            srcset="bilder/Me-handy.png 500w, bilder/Me.png 1000w"
+            sizes="(max-width: 500px) 500px, 1000px"
+          />
+          <div class="zoom-overlay">
+            <img src="bilder/Me.png" alt="Profilbild gross" />
+          </div>
+        </label>
       </div>
     </main>
   </body>
